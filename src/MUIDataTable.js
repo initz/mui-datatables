@@ -1020,7 +1020,7 @@ class MUIDataTable extends React.Component {
         )}
         <TableFilterList options={this.options} filterList={filterList} filterUpdate={this.filterUpdate} />
         <div
-          style={{ position: 'relative' }}
+          style={{ position: 'relative', overflowX: 'auto' }}
           className={this.options.responsive === 'scroll' ? classes.responsiveScroll : null}>
           {this.options.resizableColumns && (
             <TableResize
